@@ -1,0 +1,107 @@
+
+// Regular - 400, Medium - 500
+$fontHeader: 'Satoshi', sans-serif;
+$headerBGcolor: #F8F8FC;
+$fz-header: 13px;
+
+// Regular - 400, Medium - 500, Bold - 700, ExtraBold - 800
+$fontMain: 'Poppins', sans-serif;;
+$navBGcolor: #ffffff;
+$fz-nav: 14px;
+
+.section{
+    height: 100vh;
+}
+header#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 95px;
+    font-family: $fontHeader;
+    font-weight: $fz-header;
+    background-color: $headerBGcolor;
+    ul#ulHeaderRight{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 30px;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        li{
+        
+            height: fit-content;
+            cursor: pointer;
+        }
+    }
+    ul#ulHeaderLeft{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        li{
+            height: fit-content;
+            cursor: pointer;
+        }
+    }
+}
+
+nav#navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 95px;
+    font-family: $fontMain;
+    font-weight: $fz-nav;
+    background-color: $navBGcolor;
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        li{
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+    }
+    ul#ulNavRight{
+        padding: 0;
+        margin: 0;
+    }
+    ul#ulNavRightMenu{
+        gap: 32px;
+    }
+    ul#ulNavLeft{
+        gap: 20px;
+    }
+}
+
+main#mainPhoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 95px;
+    h1#textHeadMain{
+        margin: 0;
+        padding: 0;
+        margin-top: 100px;
+        font-family: $fontMain;
+        font-weight: 800;
+        font-size: 12rem;
+        letter-spacing: -0.06em;
+        background: linear-gradient(91.02deg, #4280CF 7.23%, #3975C0 14.99%, #0C315F 50.29%, #0A2444 63.22%, #03234B 85.09%, #4280CF 102.7%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    img{
+        z-index: 5;
+        position: relative;
+        margin-top: -200px;
+    }
+}
