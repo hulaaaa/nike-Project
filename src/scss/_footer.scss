@@ -3,7 +3,7 @@
     height: 50vh;
     background-color: #000;
     color: white;
-    padding: 65px 95px;
+    padding: 0px 95px;
     .fp-overflow{
         display: flex;
         flex-direction: row;
@@ -11,8 +11,12 @@
         #footer_left{
             display: flex;
             flex-direction: row;
+            gap: 15px;
             ul{
-                gap: 10px;
+                li{
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
             }
         }
         #footer_right{
@@ -21,16 +25,14 @@
             align-items:end;
             h4{
                 text-align: right;
-                font-weight: 300;
+                font-weight: 400;
             }
             span{
-                font-weight: 600;
+                font-weight: 800;
             }
             .footer_link__social{
                 gap: 10px;
             }
         }
-    }
-    
+    }    
 }
-
