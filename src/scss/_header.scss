@@ -1,0 +1,40 @@
+
+
+header#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+    font-family: $fontHeader;
+    font-weight: $fz-header;
+    width: 100vw;
+    background-color: $headerBGcolor;
+    ul#ulHeaderRight{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 30px;
+        height: fit-content;
+        margin: 0;
+        padding: 0; 
+        padding-left: 95px;
+        li{
+            height: fit-content;
+            cursor: pointer;
+        }
+    }
+    ul#ulHeaderLeft{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        padding-right: 95px;
+        li{
+            height: fit-content;
+            cursor: pointer;
+        }
+    }
+}
